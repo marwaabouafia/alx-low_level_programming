@@ -17,5 +17,6 @@ int print_last_digit(int n)
 		ld = -1 * (n % 10);
 	else
 		ld = n % 10;
+	_putchart(ld + '0');
 	return (ld);
 }
