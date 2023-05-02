@@ -4,7 +4,7 @@
  * print_array - function that prints n elements of an array of integers
  *
  * @a: int
- * @b: int
+ * @n: int
  *
  */
 
