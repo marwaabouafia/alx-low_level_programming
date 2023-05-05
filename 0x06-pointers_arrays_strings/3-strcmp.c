@@ -10,13 +10,13 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, op = 0;
+	int op = 0;
 
 	while (*s1)
 	{
 		if (*s1 != *s2)
 		{
-			op = ((int)*s1 - '0') - ((int)*s2 - '0');
+			op = ((int)*s1 - 48) - ((int)*s2 - 48);
 			break;
 		}
 		s1++;
