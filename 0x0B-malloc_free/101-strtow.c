@@ -102,7 +102,7 @@ char **strtow(char *str)
 	{
 		return (NULL);
 	}
-	tmp = malloc(sizeof(int *) * (words(str) + 1));
+	tmp = (char **)malloc(sizeof(*tmp) * (words(str) + 1));
 	if (tmp == NULL)
 	{
 		return (NULL);
@@ -112,7 +112,7 @@ char **strtow(char *str)
 		if (str[i] != ' ')
 		{
 			pos = _strlen(str, i);
-			tmp[j] = malloc(sizeof(char) * (pos + 1));
+			tmp[j] = (char *)malloc(sizeof(char) * (pos + 1));
 			if (tmp[j] == NULL)
 			{
 				for (t = j; t >= 0; t--)
