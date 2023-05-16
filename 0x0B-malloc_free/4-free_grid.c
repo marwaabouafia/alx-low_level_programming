@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- *
- * free_grid - a function that frees a 2 dimensional grid 
+ * free_grid - a function that frees a 2 dimensional grid
  *
  * @grid: int
  * @height: int
