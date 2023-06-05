@@ -1,12 +1,11 @@
 #include "lists.h"
 
 /**
- * find_listint_loop - function that frees a listint_t list
+ * free_listint_safe - Clean the list.
  *
- * @head: Pointer to the start of a list
+ * @h: The list.
  *
- * Return: Address of where the loop starts, NULL if
- * no loop is found
+ * Return: the size of the list.
  *
  */
 
