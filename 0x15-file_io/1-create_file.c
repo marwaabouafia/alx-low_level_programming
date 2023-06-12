@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+  * _strlen - Return the len of a string.
+  * @s: The string.
+  * Return: Lenght of a string.
+  */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
   * create_file - function that creates a file.
   *
   * @filename: Name of the file.
@@ -28,14 +45,7 @@ int create_file(const char *filename, char *text_content)
 		return (1);
 	}
 
-	int i = 0;
-
-	while (text_content[i] != '\0')
-	{
-		i++;
-	}
-
-	out_write = write(out_open, text_content, i);
+	out_write = write(out_open, text_content, _strlen(text_content));
 	if (out_write == -1)
 	{
 		close(out_open);
